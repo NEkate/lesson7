@@ -1,5 +1,6 @@
 ;(function(){
-    if (/s/.test(email)){
-
+    var emailPatter = /d/;
+    function isEmail(email){
+        return emailPatter.test(email);
     }
 })();
