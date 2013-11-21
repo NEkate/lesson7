@@ -1,11 +1,9 @@
 ;(function(){
-    console.log('asd'.match(/.*/));//asd
-    console.log(''.match(/.*/));//null
-    console.log('asd'.match(/./g));//'a'
-    console.log('asd'.match(/.+/g));//'asd'
-    console.log('asd\nasdasd'.match(/.+/g));//['asd', 'asdasd']
-    console.log(''.match(/.+/g));//null
-    console.log(''.match(/.?/g));//''
-    console.log('asd'.match(/.?/));//a
+    console.log('\nasd'.match(/^./));//строка должна начинаться со следующего правила // null
+    console.log('\nasd\ndfg\n1sdf'.match(/^\d/m));// \d -строка должна начинаться с числа return null
+    console.log('asd'.match(/^\d/) );// null
+    console.log('1asd'.match(/^\d/) );// 1
+    console.log('asd\n1sdfd'.match(/^\d/) );// null
+    console.log('asd\n1sdfd'.match(/^\d/m) );// 1
 
 })();
