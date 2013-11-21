@@ -1,7 +1,8 @@
 ;(function(){
-    console.log('asd1asd'.match(/\d$/) );// null
-    console.log('asd1'.match(/\d$/) );// 1
-    console.log('asd1\nsdfd'.match(/\d$/) );// null
-    console.log('asd1\n1sdfd'.match(/\d$/m) );// 1
+    console.log('asd1\nasd'.match(/\d\n./) );// 1\na
+    console.log('asd113241\nasd'.match(/\d+\n./) );// 113241\na
+    console.log('12345'.match(/\d{2,3}/) );// 123
+    console.log('12345'.match(/\d{2}/) );// 12
+    console.log('12345'.match(/\d{2}/g) );// 12 34
 
 })();
