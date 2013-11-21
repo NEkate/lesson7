@@ -1,8 +1,7 @@
 ;(function(){
-    console.log('asd'.match(/[sdfa\d]/));//return a
-    console.log('q1we'.match(/[wq\d]+/));//return q1w
-    console.log('q1we qwqw'.match(/[wq\d]+/g));//return q1w qwqw
-    console.log('q1we qwqw'.match(/[wq\d]/g));//return q 1 w q w q w
-    console.log('q1we qwqw'.match(/[^wq\d]/g));//return e
-    console.log('q1we qwqw^'.match(/[\^wq\d]+/g));//return q1w qwqw^
+    console.log('asd fdghf qwe'.match(/asd|qwe/));//asd
+    console.log('asd fdghf qwe'.match(/asd|qwe/g));//asd qwe
+    console.log('asd fdghf 1qwe'.match(/\d(asd|qwe)/g));//1qwe
+    console.log('asd fdghf qwe'.match(/asd|qwe|fd/));//asd
+    console.log('asd fdghf qwe'.match(/asd|qwe|fd/g));//asd fd qwe
 })();
